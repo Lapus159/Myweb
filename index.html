@@ -1,0 +1,72 @@
+
+<html>
+<head>
+    <title>Myself</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      
+       <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+        <div id="preloader"></div>
+    <div class="header">
+        <nav class="nav-bar">
+        <img src="logo.png" class="logo">
+            <ul id="menuList">
+            
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="http://www.slogo.ml" target="_blank">SERVICES</a></li>
+        </ul>
+            <script>
+var audio = new Audio("beat.mp3");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+
+</script>
+            <img src="menu.png" class="menu-icon" onclick="audio.play()">
+            
+        </nav>
+        <div class="text-box">
+        <h1><span class="auto-input"></span></h1>
+        <p>A guy who loves computing<br> and photography.</p>
+            <a href="https://www.facebook.com/Sami-clicks-photos-100221086039073" target="_blank" class="btn">Facebook</a>
+             <a href="https://www.instagram.com/iam_sam56" target="_blank" class="btn1">Instagram</a>
+        
+        </div>
+        
+        
+        </div>
+        
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+        var typed = new Typed(".auto-input",{
+            strings:["This is Sami Ahmed","A techy guy","knows JAVA&#128526;","and loves photography"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+            
+        })
+        </script>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load",function(){
+                loader.style.display = "none";
+            })
+        </script>
+ </body>
+</html> 
